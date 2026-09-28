@@ -1,4 +1,4 @@
-/* ---------- 1. Global variables---------- */
+/* ---------- Global variables---------- */
 :root {
     --color-bg: #ffffff;            /* page background */
     --color-surface: #f5f7fa;       /* subtle background for alternating sections */
@@ -7,15 +7,10 @@
     --color-primary: #4f6df5;       /* brand / accent color */
     --color-primary-dark: #3a56d4;  /* hover state of the accent */
     --color-border: #e2e6f0;        /* light borders & input outlines */
-    --color-error: #d64545;         /* form error messages */
-    --color-success: #2e9e6b;       /* form success messages */
 
-    --font-main: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --font-main: "Inter", sans-serif;
     --radius: 12px;                 /* consistent rounded corners */
-    --shadow: 0 4px 20px rgba(26, 26, 46, 0.08);   /* card shadow */
-    --shadow-hover: 0 8px 30px rgba(26, 26, 46, 0.15);
     --nav-height: 70px;             /* fixed header height */
-    --transition: 0.25s ease;       /* consistent animation speed */
 }
 
 /* Minimal reset: remove default browser spacing and fix box sizing.
@@ -29,7 +24,7 @@
     box-sizing: border-box;
 }
 
-/* ---------- 2. Base typography ---------- */
+/* ----------  Typography ---------- */
 
 body {
     font-family: var(--font-main);
@@ -38,7 +33,7 @@ body {
     line-height: 1.6;
 }
 
-/* Headings get a slightly tighter line-height for a polished look */
+/* Headings line height */
 h1, h2, h3 {
     line-height: 1.2;
 }
@@ -178,7 +173,7 @@ nav {
 .nav-toggle.open .hamburger::before { top: 0; transform: rotate(45deg); }
 .nav-toggle.open .hamburger::after  { top: 0; transform: rotate(-45deg); }
 
-/* ---------- 5. Hero ---------- */
+/* ----------  Hero ---------- */
 .hero {
     /* Full-viewport intro block, centered content */
     background-image: url('assets/abs-background.webp');
@@ -276,8 +271,6 @@ nav {
   border-radius: 8px;
 }
 
-
-
 .project-card {
     background: #fff;
     border: 1px solid var(--color-border);
@@ -299,7 +292,6 @@ nav {
 .project-card p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
-    flex-grow: 1;                      /* pushes tags/link to the bottom */
 }
 
 /* Small gray tag chips inside cards */
@@ -420,28 +412,7 @@ form {
     transition: border-color var(--transition), box-shadow var(--transition);
 }
 
-/* Highlight the active field */
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(79, 109, 245, 0.15);
-    outline: none;                     /* custom focus style replaces default */
-}
 
-/* JS adds .invalid to fields that fail validation */
-.form-group input.invalid,
-.form-group textarea.invalid {
-    border-color: var(--color-error);
-}
-
-/* Per-field error text (populated by script.js) */
-.error-message {
-    display: block;
-    color: var(--color-error);
-    font-size: 0.85rem;
-    margin-top: 0.3rem;
-    min-height: 1.1em;                 /* reserves space so layout doesn't jump */
-}
 
 /* Overall success/failure line below the form */
 #form-status {
@@ -472,12 +443,8 @@ footer {
     color: #fff;
     text-decoration: none;
     opacity: 0.85;
-    transition: var(--transition);
 }
 .social-links a:hover {
     opacity: 1;
     color: var(--color-primary);
 }
-
-
-

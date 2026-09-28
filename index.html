@@ -4,30 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elone Alemayehu | Portfolio</title>
-
-    <!-- Meta description: summarizes the page for search engines and social sharing -->
     <meta name="description" content="Portfolio of a marketing, web development, and cloud specialist — projects, skills, and contact information." />
 
-    <!-- External stylesheet: all visual styling lives here -->
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
-   
 </head>
 
 <body>
 
-    <!-- ================= HEADER / NAVIGATION ================= -->
+     <!-- Header Section -->
     <header>
         <nav aria-label="Main navigation">
-            <!-- Logo doubles as a "back to top" link -->
+            <!-- Logo  -->
             <img src="assets/ea-logo-120.webp" class="logo" alt="Elone Alemayehu logo" />
-
-            <!-- Hamburger button: only visible on mobile (styled in CSS).
-                 'aria-expanded' tells screen readers whether the menu is open;
-                 the JS toggles it when the menu opens/closes. -->
-            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-                <span class="hamburger"></span>
-            </button>
 
             <!-- Navigation links -->
             <ul id="nav-menu">
@@ -135,26 +124,22 @@
 
             <!-- Contact form -->
             <form action = "mailto:ealemayehu55+port@gmail.com" method="post" enctype="text/plain">
-                <!-- Each field is wrapped in a <div> so CSS/JS can target,
-                     style, and show error messages per field -->
+                <!-- Each field is wrapped in a <div> so CSS/JS can target -->
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required />
-                    <small class="error-message" id="name-error"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Your Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required />
-                    <small class="error-message" id="email-error"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <small class="error-message" id="message-error"></small>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
 
         </section>
@@ -163,11 +148,10 @@
     <!-- ================= FOOTER ================= -->
     <footer>
         <div class="social-links">
-            <a href="https://github.com/yourusername" target="_blank"" aria-label="GitHub profile">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn profile">LinkedIn</a>
+            <a href="https://github.com/elone-a" target="_blank" aria-label="GitHub profile">GitHub</a>
+            <a href="https://www.linkedin.com/in/elonealemayehu/" target="_blank" aria-label="LinkedIn profile">LinkedIn</a>
         </div>
-        <p>&copy; 2026 Elone | Built with ❤️ using HTML, CSS, JS</p>
-
+        <p>&copy; 2026 | Built with HTML & CSS</p>
     </footer>
 </body>
 </html>
