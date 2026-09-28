@@ -60,17 +60,6 @@ section h2 {
     margin-bottom: 2.5rem;
 }
 
-
-/* Visible focus ring for ALL keyboard-navigable elements —
-   never remove outlines without replacing them. */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-    outline: 3px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
 /* ---------- 4. Header & navigation ---------- */
 header {
     position: sticky;                  /* sticks to the top while scrolling */
@@ -441,7 +430,6 @@ footer {
 
 .social-links a {
     color: #fff;
-    text-decoration: none;
     opacity: 0.85;
 }
 .social-links a:hover {
