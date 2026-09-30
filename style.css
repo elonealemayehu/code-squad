@@ -238,7 +238,6 @@ nav {
 .place-card {
     border-radius: var(--radius);
     overflow: hidden;                  /* clips the image to the card's corners */
-    box-shadow: var(--shadow);
     position: relative;
 }
 .place-card img {
